@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>MasterPlan</title>
+    <link rel="icon" type="images/x-icon" href="logo.jpg"/>
+    <style>
+        body{
+            background-image:url("https://images.pexels.com/photos/1631677/pexels-photo-1631677.jpeg?auto=compress&cs=tinysrgb&w=600");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index:0.6;
+        
+        }
+    .faq{
+    padding:10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+.faq h2{
+    font-weight: 500;
+    font-size: 40px;
+}
+.acc{
+    margin:60px auto;
+    width:100%;
+    max-width:750px;
+
+}
+.acc li{
+    list-style:none;
+    width:100%;
+    padding:5px;
+}
+.acc li label{
+    display:flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background:#7f0bdf;
+    color: antiquewhite;
+    margin-bottom: 2px;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+label::after{
+    content:'+';
+    font-size: 34px;
+    position: absolute;
+    right:20px;
+    transition:transform 0.5s;
+}
+input[type="radio"]{
+    display:none;
+}
+.acc .content{
+    background:#aee0e9;
+    text-align:left;
+    padding:0 20px;
+    max-height:0;
+    overflow:hidden;
+    transition: max-height 0.5s, padding 0.5s;
+    font-weight: bold;
+}
+.acc input[type="radio"]:checked + label + .content{
+    max-height: 600px;
+    padding:30px 20px;
+
+
+}
+.acc input[type="radio"]:checked + label ::after{
+    transform:rotate(135);}
+
+
+
+    </style>
+  </head>
+  <body class="text-bg-image height:100vh">
+    <nav class="navbar navbar-expand-lg " style="background-color: #9691dd; ">
+      <div class="container-fluid">
+        <img src="logo.jpg" alt="Logo" width="75" height="30" class="d-inline-block align-text-top ">
+        <a class=" h1 navbar-brand mx-6 text-light font-weight-bold fs-2 fw-bold p-2 " href="#">MasterPlan</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto  mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active mx-6 fw-bold h1 text-light" aria-current="page" href="/index">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-6 fw-bold h1 text-light" href="/about">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle mx-6 fw-bold h1 text-light" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Topics
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item mx-6 h2" href="/10">Seconadry education</a></li>
+                <li><a class="dropdown-item mx-6 h2" href="/12">Senior Secondary education</a></li>
+                <li><hr class="dropdown-divider "></li>
+                <li><a class="dropdown-item h2" href="/code">Coding</a></li>
+                <li><a class="dropdown-item h2" href="/upsc">UPSC</a></li>
+                <li><a class="dropdown-item h2" href="/exams">Competitive Exams</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-6 fw-bold h1 text-light" href="/contact">Contact</a>
+            </li>
+
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    <br>
+    <div class="d-flex justify-content-center">
+    <h1 class="h1 fw-bolder text-primary shadow shadow-danger"> A Roadmap to backend development </h1></div>
+    <br><br>
+     <div class="container rounded shadow">
+        <img src="backend.jpg" alt="">
+     </div>
+     <br><br>
+    <div class="faq ">
+        <h2 class="h1 fw-bolder">Frequently Asked Questions </h2>
+        <ul class="acc">
+            <li>
+                <input type="radio" name="acc" id="first">
+                <label for="first" class="rounded  shadow shadow-primary">What is Backend development</label>
+                <div class="content rounded  shadow shadow-primary">
+                    <p>A Back-End developer handles servers, databases, and APIs. In short, one who stores and organizes data communicates with the UI (Front-End) and performs server-side management. For building the structure of a web application, a back-end developer is responsible. For example, if you take any e-commerce website such as Amazon, all that product list you see in the UI is stored somewhere, Right? That data is stored in the database which is handled by the back-end, the sign-in button you see renders you to another page when you enter details that API call is made by the back-end, and also the server-side rendering is handled all by the back-end developers</p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="acc" id="second">
+                <label for="second" class="rounded  shadow shadow-primary">Difference between Front end and backend developers</label>
+                <div class="content rounded shadow shadow-primary">
+                    <p> The existence of one depends on the existence of the other! While Front-End Web development handles the parts of the website that are visible to the users, Back-End Web development is the mystical part that often remains unseen.front-end is heavily based on designing to make your website as attractive as possible, back-end deals with all the complicated and messy stuff that actually makes your website run (like database operations, user authentication, application logic, etc).<p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="acc" id="third">
+                <label for="third" class="rounded  shadow shadow-primary">Books to Learn Backend</label>
+                <div class="content rounded shadow shadow-primary">
+                    <ul>
+                        <li>Head First Java: By Kathy Sierra, Bert Bates: This one is the best beginners friendly and classic book to learn Java from scratch and it covers all the concepts with proper diagrams and visuals.</li>
+                        <li>Programming: Principles and Practice Using C++: By Bjarne Stroustrup: his book has more than 1200 pages and may be scary for complete beginners due to its size but after reading this book you will be more confident in programming. It is written by the original implementor of C++ and is good for absolute beginners. </li>
+                        <li>Learn Python The Hard Way: By Zed A. Shaw:This book has really helped a lot of people learn Python with a practical approach. The author has included exercises in a way that you need to type code on your own and then you need to fix the mistake in your code. </li>
+                        <li>The Joy of PHP Programming: By Alan Forbes:f you are an absolute beginner in programming and want to become a professional web developer but have no idea where to start then this book is best for you to learn everything from scratch. The book covers HTML basics first so that a newbie can easily start with it and then step by step it covers all the concepts of PHP and helps you to read, write, modify, and make your own dynamic website. </li>
+                        <li>Beginning Node.js:The book covers all the core concepts of NodeJS and will walk you through all the principles. You will be learning to set up the complete environment, SPA(Single page application) concept, packages, streams, handling callbacks along with testing and debugging your application. </li>
+                        <li> PHP & MySQL: The Missing Manual: If you already have experience in PHP programming then this book will take you to the next level. This book has 546 pages that help programmers manage content, build a database, and interact with users. You will also learn about the connectivity of PHP and MySQL with the proper guidance of the database management system.</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="acc" id="fourth">
+                <label for="fourth" class="rounded  shadow shadow-primary">Is Back-End Web Development Hard?</label>
+                <div class="content rounded shadow shadow-primary">
+                    <p>Back-End development is one of the easiest programming things that you can learn and you can grab a decent job as a Beck-End developer by learning a few more languages, such as HTML and CSS.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <input type="radio" name="acc" id="fifth">
+                <label for="fifth" class="rounded  shadow shadow-primary">Sould i learn everything listed on the roadmap</label>
+                <div class="content rounded shadow shadow-primary">
+                    <p>This roadmap contains everything that you might encounter while working as a Backend Developer. You may not need everything listed on this roadmap to get into the industry; every job is different and most of the jobs will require a subset of the items on the roadmap. However, knowing what you don't know is as important as knowing things, so you can use this roadmap to get an idea of what you are missing as well.If you are a beginner who is just getting started, don't feel overwhelmed by looking at this roadmap. Look at the answer to the FAQ 'How to become a developer?'</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <footer class="text-center text-lg-start bg-primary-secondary fw-bold text-light">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="https://www.facebook.com/MasterPlan_11" class="me-4 link-secondary">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/MasterPlan" class="me-4 link-secondary">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https;//linkedln.com/MasterPlan" class="me-4 link-secondary">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/Kanishka-1102" class="me-4 link-secondary">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i><img src="logo.jpg" alt="" srcset="" width="300px" height="100px">
+          </h6>
+
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Products
+                </h6>
+                <p>
+                  <a href="/jee" class="text-reset">JEE</a>
+                </p>
+                <p>
+                  <a href="/neet" class="text-reset">NEET</a>
+                </p>
+                <p>
+                  <a href="/upsc" class="text-reset">UPSC</a>
+                </p>
+                <p>
+                  <a href="/full" class="text-reset">Full Stack Development</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3 text-secondary"></i> Ghaziabad</p>
+                <p>
+                  <i class="fas fa-envelope me-3 text-secondary"></i>
+                  MasterPlan@email.com
+                </p>
+                <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4 d-flex align-items-center justify-content-center" id="footer">
+          © 2023 Copyright:www.MasterPlan.com
+          <a class="text-reset fw-bold " href="https/MasterPlan.com/"><img  width="75px" height="50px" src="logo.jpg" >www.MasterPlan.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+        
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+        </body>
+      </html>   

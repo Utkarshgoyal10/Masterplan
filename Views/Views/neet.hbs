@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Pathway</title>
+    <link rel="icon" type="images/x-icon" href="logo.jpg" />
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("data:image/jpeg;base64,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");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index:0.6;
+      color: beige;
+      font-weight: 200;
+      font-size: medium;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-bottom: 0px;
+    }
+
+    .d-flex{
+        gap:25px;
+    }
+    h1 {
+      color: #333333;
+    }
+
+    h2 {
+      color: #666666;
+    }
+
+    ul {
+      list-style-type: disc;
+    
+    }
+
+
+    .image-container {
+      
+      overflow: scroll;
+      margin-left:0px;
+    }
+    
+    .image-container img {
+      display: block;
+      width: 100%;
+      height: auto;}
+  </style>
+</head>
+<body>
+    <body class="text-bg-image height:100vh">
+        <nav class="navbar navbar-expand-lg mt-0" style="background-color: #9691dd; ">
+            <div class="container-fluid">
+              <img src="logo.jpg" alt="Logo" width="70" height="40" class="d-inline-block align-text-top ">
+              <a class="navbar-brand mx-6 text-pink-400 font-weight-bold fs-1 fw-bold" href="#">MasterPlan</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active mx-6 fw-bold" aria-current="page" href="/index">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-6 fw-bold" href="/about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mx-6 fw-bold" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Topics
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item mx-6" href="/10">Seconadry education</a></li>
+                      <li><a class="dropdown-item mx-6" href="/12">Senior Secondary education</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item " href="/code">Coding</a></li>
+                      <li><a class="dropdown-item " href="/upsc">UPSC</a></li>
+                      <li><a class="dropdown-item " href="/jee">JEE</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-6 fw-bold" href="/contact">Contact</a>
+                  </li>
+      
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
+    <h1 class="h1 align-items-center fw-bold u text-dark center ">Preparation Strategy To Crack NEET-UG</h1>
+    <ol class="list-group list-group-light list-group-numbered">
+        <li class="list-group-item h3 fw-bold rounded shadow"><h1>Create A Sitting Habit</h1>
+            <p class="h6 fw-bold text-dark">Yes, you read it right. Often you might have read or heard from the toppers about the long study hours they have dedicated to achieving the desired success. To put long study hours, you need to first cultivate the habit of sitting for long hours. With regular school and coaching, you need to identify a particular time slot in your routine in which you are just focused on the NEET preparation and nothing else. Don’t mix it with the time you invested in homework or school tasks. Once you start with 2-4 hours a day, then it will be easy for you to stretch it to 7 to 8 hours when required. </p>
+        </li>
+        <a  class="h2 fw-bolder text-primary center"href="https://mystudycart.com/neet-2024#study-plan">Study plan</a>
+        <li class="list-group-item h3 fw-bold rounded shadow "><h1>Focus On Concepts</h1>
+          <p class="h6 fw-bold text-dark">This is the time when you should work on clearing the concepts. Start with reading your NCERTs. Before heading to any other study material, the concepts should be cleared from the NCERTs. Solve all the questions given in the textbooks, additional exercises, trivia and any other information that is mentioned in the NCERT books.</p>
+        </li>
+        <a  class="h2 fw-bolder text-primary align-items-center"href="https://mystudycart.com/blog/best-timetable-for-neet-preparation/">Time Table</a>
+        <li class="list-group-item h3 fw-bold rounded shadow"><h1> Keep Evaluating Yourself
+        </h1>
+    <p class="h6 fw-bold text-dark">Be it a school test, or a test at your coaching centre, you should keep evaluating yourself with the marks you are securing in each test. This is the right time to identify your mistakes and work on improving them. Don’t be in a dilemma that if you are securing low at this point of time then you will be able to cope up at the later stage. There will be no miracle at the later stage, you need to take the charge of your performance and start working on improving it. </p></li>
+    <a  class="h2 fw-bolder text-primary center"href="https://www.sarkarirush.com/neet-books-pdf/">BOOKs Download</a>
+    <li class="list-group-item h3 fw-bold rounded shadow"><h1>Focus On Concepts</h1>
+        <p class="h6 fw-bold text-dark">This is the time when you should work on clearing the concepts. Start with reading your NCERTs. Before heading to any other study material, the concepts should be cleared from the NCERTs. Solve all the questions given in the textbooks, additional exercises, trivia and any other information that is mentioned in the NCERT books.</p>
+      </li>
+      <a class="h2 fw-bolder text-primary center"href="https://www.pw.live/online-course-physics-wallah-neet">Online Neet Coaching</a>
+      <li class="list-group-item h3 fw-bold rounded shadow"><h1>Spend Time Judiciously</h1>
+        <p class="h6 fw-bold text-dark">If you are thinking that you have enough months for preparation then you are wrong. You have only limited months of preparation and your time should be invested properly. Stop spending hours on Social Media or hanging out with friends unnecessarily. Social media will be there forever, and hangouts can be postponed but the time which is available for preparation cannot be replaced or renewed</p>
+        </li>
+        <a  class="h2 fw-bolder text-primary center"href="https://www.vedantu.com/study-material/neet-study-material"> Study material</a>
+        <li class="list-group-item h3 fw-bold rounded shadow"><h1> Leaving Topics</h1>
+            <p class="h6 fw-bold text-dark">Be it a school test, or a test at your coaching centre, you should keep evaluating yourself with the marks you are securing in each test. This is the right time to identify your mistakes and work on improving them. Don’t be in a dilemma that if you are securing low at this point of time then you will be able to cope up at the later stage. There will be no miracle at the later stage, you need to take the charge of your performance and start working on improving it. Identify the areas where you are lagging and start focusing by giving additional focus on such topics. </p>
+        </li>
+        <a class="h2 fw-bolder text-primary center" href="https://www.vedantu.com/neet/medical-colleges-in-india-accepting-neet">Neet Accepting Government Colleges</a>
+        <li class="list-group-item h3 fw-bold rounded shadow"><h1>Sticking To Your TimeTable</h1>
+            <p class="h6 fw-bold text-dark">The sooner the better. Most of the candidates work on creating a timetable when there is just a month or two left for the exam. That can be a blunder as the last few months will be very hectic and you will not be able to do proper time management due to different exams. It is better you utilize this time by creating a timetable for your boards and NEET preparation parallelly. If you are a dropper then, you should just focus on creating a timetable dividing slots for Class 11 & 12 topics. Further, stick to your designed timetable</p>
+        </li>
+</ol>
+ <div class="links h2 fw-bolder text-primary ">
+    <ul>
+    <li><a href="https://drive.google.com/file/d/1Wax1hmivB1QD6oHH5eHxl7IP3kVQmvAb/view"> Link of syllabus of NEET</a><br></li>
+    <li><a href="https://drive.google.com/file/d/1Wax5hmivB1QD6oHH5eHxl7IP3kVQmvAb/view"> BOOKS</a>
+ </div></ul></li>
+ <div class="d-flex justify-content-center align-items-center">
+ <img src="neet.jpeg" alt=""></div>
+              
+
+</body>
+
+
+
+  
+<footer class="conatiner">
+    <div class="text-center p-4 d-flex align-items-center justify-content-center mb-0" id="footer">
+        © 2023 Copyright:www.MasterPlan.com
+        </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

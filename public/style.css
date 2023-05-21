@@ -1,0 +1,84 @@
+* {
+
+    padding: 0px;
+    margin: 0px;
+}
+
+#contact-box form {
+    opacity: 0.6;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 30PX;
+    width: 1000px;
+
+}
+
+
+#a133 {
+    width: 110px;
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
+    margin-left: 45%;
+    border: 3px solid white;
+    border-radius: 20px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+#contact-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,#contact-box textarea {
+    width: 100%;
+    padding: 5px;
+    color: #ff0013;
+    font-weight: bold;
+}
+
+.contact::before {
+    content: "";
+    background: url('https://media.istockphoto.com/id/1311934969/photo/contact-us.jpg?b=1&s=170667a&w=0&k=20&c=2sJEN1Hhg6heUi1ZxKs6pJDwcyLYXPc4pUGd3hEjOjE=') no-repeat center center/ cover;
+    position: absolute;
+    width: 100%;
+    height: 78%;
+    opacity: 0.8;
+    z-index: -1;
+
+}
+
+.center {
+    text-align: center;
+
+}
+.a13 {
+    font-size: 20px;
+    border-radius: 10px;
+    border-width: 5px;
+}
+
+#contact-box label {
+    font-size: 25px;
+    color: black;
+}
+#footer{
+    background-color: black;
+    width: 100vw;
+    height:15px;
+    color : white;
+}
+body{
+    height: 100%;
+    width: 100%;
+    overflow-x:hidden ;
+}

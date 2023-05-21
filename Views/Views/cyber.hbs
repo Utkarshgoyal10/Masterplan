@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>MasterPlan</title>
+    <link rel="icon" type="images/x-icon" href="logo.jpg" />
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAsJCQcJCQcJCQkJCwkJCQkJCQsJCwsMCwsLDA0QDBEODQ4MEhkSJRodJR0ZHxwpKRYlNzU2GioyPi0pMBk7IRP/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wAARCADGALEDASIAAhEBAxEB/8QAGwAAAwEBAQEBAAAAAAAAAAAAAAECAwQGBQf/xAAhEAEBAQABBAIDAQAAAAAAAAAAARECEiFBUQMxE2Fxgf/EABsBAAMBAQEBAQAAAAAAAAAAAAECAwQABQcG/8QAHxEBAQEAAwACAwEAAAAAAAAAAAECAxESEzEEQVEh/9oADAMBAAIRAxEAPwD8oBh+q6QIjBLBIAJ2OBGCWCQATscCMEsEgDTsEiMEscQAJciRgE8uIGAscQADpzYAP0tiIIwnYJEYTsEgAnY4EYJYJAAnTgAC9CAAW5cQMZfQeLfqOLAqcafR+zfBv+O7Zhp0T2Oj9kv4+/4LML/HfcBfg3/HLIw92xEgAnRBGCWCRGE7HEDwidCAAXpxBWHgzjtd2nKeQ8PFJx5n2M7pYeHh4fuT6NMlgPDwvpSYIHhh6N4SFB3qu8MgRremToAB3bgAAriBkHTgDIvQgxlXOF8u/wAn2bOda+kYci+g+kt5J+lpwa/aMPFYCe+1Zx9FgVgx3o3ghhgOzTIGHgwOzeSwHgd27y5zI1bXndA8Iw7tPJBgwzw0mjeZU5Rl9VpIci0xqh8cZdPL0qfH7rXDw3xVTPHlEkn1DxWHiWuFpzOvpIVgxDXH0rInBlUMSssP57SDwYXt3ghh4eD27wnDwxgdmmC7A8Adj4chkqNkz28MQwa2cGEURtGZIMNSVH7ishwyhutUzAYOEtXzBhg0dSLZicGKwYzaytMpwsXgxm1k8yjBi8GJ0fCMPFYMLaaYTgVgDsfDhOMz2xrzzz+PzXTQ0yyqbMcks/w0hwyhqTR5DUlQ+lZDhkcddK5hwyioX0vnIMHE7pfOTPAaVq+YWDFDEqtMpwYvBiFUmEYeLwYlVJxowNOkFP8AG+MZGMfjIcXERUVxq5qki4aYpszyKTJxSVQ82pmHDKGPpbMVDKHC3S+YqGUVCXTRnIhhUTumjORIYipE7pozgpDw5FYna0ZwnDxUh4Sr540YGmAD/G8+YNz59IcUUOCvmKhlFRXOlZBFFDis0eQ4ooY+lsw4ojgXS+Yo4UVC+mnMM4IqEtac5EVIJFyEta8YEhyHIuQvbXnjTIqRUhyA05404F4HKfG8ycQel9Pl0rRUZyqnIe2jOo0isqJyaS6701Yk0Rr6Zfs+i+O5ptf4b+kmOnlPByX1T+jTFOKhSW+K0nDl/P671GnHHb9RMXFT455rTjxk8Fu23j4NX7Rx42tJwVIqQvbdx8MhSKkORcgNmONMipFSKkFqzxpkVOKpFyOac8bPpDTA5T43jjIIdvjZnqTHsZVzk34fUc073Pbp4TJAtbfxrbW/FcZ8WkdK9vjVFRMVDdteVSKkTFxzRmHIqQoqGacw5FSFFQWnEORchRUc1YipFSJioLViKkVIUVBacngAcq8UCNk7fDwDkt8L48JO97u9HzjWvo/j499v+OiIi4Hb1OHjmZ00i4zi4aV6WGkVERUppWrC4uM5Vwe2rK4qIiobtpyuKiJVQZWnNXFRMVKPbTmrioiVUotOauKiIqC05qwnQ7tXt4uLgDze3xbKouADGrC4qAGbMNIqAGjZhUXADxpwqLgDmrKoqAGacqioAaNOVRcAFpyqKgBmjKlQAWnJgAVH/9k=");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index:0.6;
+    
+      margin-bottom: 0px;
+    }
+
+
+    h1 {
+      color: #333333;
+    }
+
+    h2 {
+      color: #666666;
+    }
+
+    ul {
+      list-style-type: disc;
+    
+    }
+
+
+    .image-container {
+      
+      overflow: scroll;
+      margin-left:0px;
+    }
+    
+    .image-container img {
+      display: block;
+      width: 100%;
+      height: auto;}
+  </style>
+</head>
+<body>
+    <body class="text-bg-image height:100vh">
+      <nav class="navbar navbar-expand-lg" style="background-color: #9691dd;">
+        <div class="container-fluid">
+          <img src="logo.jpg" alt="Logo" width="80" height="40" class="d-inline-block align-text-top ">
+          <a class="navbar-brand mx-6 text-light font-weight-bold fs-2 fw-bold p-2 " href="#">MasterPlan</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto  mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active mx-6 fw-bold" aria-current="page" href="/index">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-6 fw-bold" href="/about">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle mx-6 fw-bold" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item mx-6" href="/10">Seconadry education</a></li>
+                  <li><a class="dropdown-item mx-6" href="/12">Senior Secondary education</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item " href="/code">Coding</a></li>
+                  <li><a class="dropdown-item " href="/civil">Civil Exams</a></li>
+                  <li><a class="dropdown-item " href="/other">Other fields</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-6 fw-bold" href="/contact">Contact</a>
+              </li>
+  
+            </ul>
+          </div>
+        </div>
+      </nav>
+       <h1 class="fw-bolder p-2 center h1 text-warning">Road Map to CyberSecurity</h1><br>
+       <div class="d-flex justify-content-center rounded">
+        <p class="h2 fw-bold text-light">Follow these best practices to create a resilient, scalable and agile cybersecurity strategy.</p>
+       </div>
+      <div class="container" class="h-1000 w-1000">
+    <img src="cyber.png"  class="h-500 w-500 p-4 ml-14" alt="Cyber Roamap" ></div><br>
+    <div class="container rounded shadow">
+        <h1 class="h1 text-warning">What is Cyber Security?</h1>
+        <p class="h2 fw-bold text-light">
+          Cyber security is all about protecting systems, servers, networks, data and devices connected to the internet from malicious attacks intended towards illegally accessing, altering and exploiting data. In fact rapid digital transformation is one of the major reasons why companies need to amp up their cyber security operations.
+        </p>
+    </div>
+    <div class="container rounded shadow">
+      <h1 class="h1 text-warning">Why is Cyber Security Important?</h1>
+      <p class="h2 fw-bold text-light">
+        Cyber Crimes are increasing rapidly and according to Cybersecurity Ventures, the annual Worldwide Cybercrime cost was USD 3 trillion in 2015 and is expected to increase to USD 10 Trillion annually by 2025. The Global Digital Disruption has made cyber attacks a prime concern for companies globally.
+      </p>
+  </div>
+  <div class="container rounded shadow">
+    <h1 class="h1 text-warning">Increasing Demand for Cyber Security </h1>
+    <p class="h2 fw-bold text-light">
+      With an increase in cyber security budgets in organizations, there is a spike in the number of cyber security job opportunities as well. Companies are on the lookout for fresh talent ready to handle their cyber security challenges. 
+    </p>
+</div>
+<div class="container rounded shadow">
+  <h1 class="h1 text-warning center">Complete Roadmap <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-down-square" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 2.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
+  </svg></h1>
+</div>
+    <div class="conatiner d-flex align-items-center justify-content-center">
+      <img src="cyber.jpg" class="rounded shadow" alt="roadmap"></div>
+    </div>
+<footer class="conatiner">
+    <div class="text-center p-4 d-flex align-items-center justify-content-center mb-0" id="footer">
+        © 2023 Copyright:www.MasterPlan.com
+        
+      </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

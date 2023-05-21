@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@1,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+	font-family:"Shantell Sans",cursive,sans-serif;
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+    background-color:grey;
+}
+.header1{
+    height:10vh;
+    background-color: black;
+   
+    width:100%;
+}
+
+.header{
+	height:50vh;
+	
+}
+img{
+	height:50vh;
+	width:100%;
+    position: relative;
+}
+
+nav{
+	position:absolute;
+	top:30px;
+	bottom:20px;
+	color:blue;
+	border:2px hidden white;
+	
+}
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    font-size: 30px; 
+   
+    color:yellow;  
+}
+div{
+    background-color: black;
+}
+ a:link{
+	color:blue;
+}
+ a:hover{
+	color:green;
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    left: 200px;
+    font-size: 30px; 
+}
+.top-left2{
+    position: absolute;
+    top: 8px;
+    left: 400px;
+    font-size: 30px;
+}
+.top-right2 {
+    position: absolute;
+    top: 8px;
+    left: 600px;
+    font-size: 30px; 
+}
+.container{
+    margin-top:30px;
+    height:100vh;
+    width:100%;
+    margin-left:80px;
+    background-color:grey;
+}
+.syllabus{
+    height:200px;
+    width:100vh;
+    padding-left: 50px;
+    color:yellow;
+    font-size:30px;
+    background-color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+p{
+    font-size: 25px;
+    color:rosybrown;
+}
+.row{
+	height:200px;
+	width:100vh;
+	box-shadow:5px 5px 18px 5px rgb(141, 220, 243);
+}
+.row1{
+	margin-bottom:30px;	
+}
+.row3{
+    margin-top:30px;
+    height:300px;
+    width:170vh;
+}
+#para{
+    width:150vh;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+}
+.img-box{
+   margin-top:45px;
+   position:absolute;
+   height:350px;
+   width:50vh;
+  background-color: white;
+   margin-left:950px;
+}
+.row4{
+    margin-top:40px;
+    margin-left:500px;
+    height:300px;
+    width:110vh;
+    margin-right: 20px;
+}
+ul{
+    color:rosybrown;
+}
+.img2{
+    margin-top:800px;
+   position:absolute;
+   height:5vh;
+   width:40vh;
+  background-color: white;
+   margin-left:200px;
+}
+.img-footer{
+	height:50px;
+	width:50px;
+margin-left:700px;	
+}
+.img2-footer{
+	height:50px;
+	width:50px;
+	padding:0.5em;
+	margin-bottom:50px;
+}
+.img3-footer{
+	height:50px;
+	width:50px;
+	padding:0.5em;
+	margin-bottom:50px;
+}
+.icons{
+	display:flex;
+	height:100px;
+	padding:1em;
+	margin-top: 550px;
+	
+}

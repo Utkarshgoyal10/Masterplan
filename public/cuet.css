@@ -1,0 +1,119 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    
+  }
+  
+  /* Apply some basic styling */
+
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  footer {
+   
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  h1{
+    font-size:80px;
+    margin-left:400px;
+  }
+ 
+ 
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+  
+    nav ul li {
+
+      display: block;
+      margin: 10px 0;
+    }
+  
+    main {
+      padding: 10px;
+    }
+  }
+  .container{
+    display:flex;
+    padding:5px;
+    margin-top:50px;
+    background-color: rgb(46, 218, 218);
+    box-shadow:5px 5px 10px 5px black;
+  }
+  .row1{
+    background-color: azure;
+  }
+  .container1{
+    background-color:rgb(46, 218, 218);
+    margin-top: 50px;
+    font-size:30px;
+    box-shadow:5px 5px 10px 5px black;
+  }
+  .row2{
+   background-color:rgb(165, 249, 249) ;
+   font-size: 30px;
+  }
+  .container2{
+    margin-top:50px;
+    font-size:25px;
+    display:flex;
+    background-color: rgb(165, 249, 249);
+    box-shadow:5px 5px 10px 5px black;
+  }
+  .container3{
+    margin-top: 50px;
+    font-size: 25px;
+    background-color:rgb(165, 249, 249) ;
+    box-shadow:5px 5px 10px 5px black;
+  }
+  .container4{
+    margin-top: 50px;
+    font-size: 25px;
+    background-color:rgb(165, 249, 249) ;
+    box-shadow:5px 5px 10px 5px black;
+  }
+  .container5{
+    margin-top:100px;
+   display:flex;
+   align-items:center;
+   justify-content: center;
+   
+   
+   
+  }
+  .container5 img{
+    height:600px;
+  }

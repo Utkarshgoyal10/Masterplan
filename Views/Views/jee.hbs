@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>MasterPlan</title>
+    <link rel="icon" type="images/x-icon" href="logo.jpg" />
+    <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("data:image/jpeg;base64,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");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index:0.6;
+      color: beige;
+      font-weight: 200;
+      font-size: medium;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      margin-bottom: 0px;
+    }
+
+    .d-flex{
+        gap:25px;
+    }
+    h1 {
+      color: #333333;
+    }
+
+    h2 {
+      color: #666666;
+    }
+
+    ul {
+      list-style-type: disc;
+    
+    }
+
+
+    .image-container {
+      
+      overflow: scroll;
+      margin-left:0px;
+    }
+    
+    .image-container img {
+      display: block;
+      width: 100%;
+      height: auto;}
+  </style>
+</head>
+<body>
+    <body class="text-bg-image height:100vh">
+        <nav class="navbar navbar-expand-lg mt-0" style="background-color: #9691dd; ">
+            <div class="container-fluid">
+              <img src="logo.jpg" alt="Logo" width="70" height="40" class="d-inline-block align-text-top ">
+              <a class="navbar-brand mx-6 text-pink-400 font-weight-bold fs-1 fw-bold" href="#">MasterPlan</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active mx-6 fw-bold" aria-current="page" href="/index">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-6 fw-bold" href="/about">About</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle mx-6 fw-bold" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Topics
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item mx-6" href="/10">Seconadry education</a></li>
+                      <li><a class="dropdown-item mx-6" href="/12">Senior Secondary education</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item " href="/code">Coding</a></li>
+                      <li><a class="dropdown-item " href="/exams">Competitive Exams</a></li>
+                      <li><a class="dropdown-item " href="/frontend">Frontend</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mx-6 fw-bold" href="/contact">Contact</a>
+                  </li>
+      
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
+ <h1 class="fw-bolder fs-20 justify-content- center align-items-center"> JEE:Entrance To IIT</h1>
+<div class="container text-dark ">
+    <h1 class="text dark">Block Statergy</h1>
+    <ul>
+      <h2 class="text-dark">Block 1</h2><p class="text-primary">Start with the below topics </p>
+      <table class="table h5 fw-bold">
+        <thead>
+          <tr>
+            <th scope="col fs-10 fw-bolder">#</th>
+            <th scope="col fs-10 fw-bolder">Physics</th>
+            <th scope="col fs-10 fw-bolder">Chemistry</th>
+            <th scope="col fs-10 fw-bolder">Maths</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Class 11</th>
+            <td>Kinemats and relative+thermo,KTG</td>
+            <td>Mole Concept,structure of atoms , sates of matter</td>
+            <td>Sets and functions</td>
+          </tr>
+          <tr>
+            <th scope="row">Class 12</th>
+            <td>Modern physics</td>
+            <td>Solid state,SOlutions ,Electrochemistry cgemical kinematics</td>
+            <td>Relationa and functions</td>
+          </tr>
+        </tbody>
+      </table>
+    </ul>
+    <ul>
+        <h2 class="text-dark">Block-2</h2><p class="text-primary">Complete the below topics by september month</p>
+        <table class="table h5 fw-bold">
+            <thead>
+              <tr>
+                <th scope="col fs-10 fw-bolder">#</th>
+                <th scope="col fs-10 fw-bolder">Physics</th>
+                <th scope="col fs-10 fw-bolder">Chemistry</th>
+                <th scope="col fs-10 fw-bolder">Maths</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Class 11</th>
+                <td>Gravitation+Heat transfer+NLM +WRE</td>
+                <td>P block</td>
+                <td>Alberbra</td>
+              </tr>
+              <tr>
+                <th scope="row">Class 12</th>
+                <td>Electrostatics+current electricity</td>
+                <td>P-Block,d anf f and metallurgy</td>
+                <td>Albera (Vector +3D)</td>
+              </tr>
+            </tbody>
+          </table>
+    </ul>
+    <ul>
+        <h2 class="text-dark">Block-3</h2><p class="text-primary">CImplete the below topics by december month</p>
+        <table class="table h5 fw-bold">
+            <thead>
+              <tr>
+                <th scope="col fs-10 fw-bolder">#</th>
+                <th scope="col fs-10 fw-bolder">Physics</th>
+                <th scope="col fs-10 fw-bolder">Chemistry</th>
+                <th scope="col fs-10 fw-bolder">Maths</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Class 11</th>
+                <td>Gravitation+Heat transfer+NLM +WRE</td>
+                <td>P block</td>
+                <td>Alberbra</td>
+              </tr>
+              <tr>
+                <th scope="row">Class 12</th>
+                <td>Electrostatics+current electricity</td>
+                <td>P-Block,d anf f and metallurgy</td>
+                <td>Albera (Vector +3D)</td>
+              </tr>
+            </tbody>
+          </table>
+    </ul>
+    <ul>
+        <h2 class="text-dark">Block-4</h2><p class="text-primary">CImplete the below topics by january month</p>
+        <table class="table h5 fw-bold">
+            <thead>
+              <tr>
+                <th scope="col fs-10 fw-bolder">#</th>
+                <th scope="col fs-10 fw-bolder">Physics</th>
+                <th scope="col fs-10 fw-bolder">Chemistry</th>
+                <th scope="col fs-10 fw-bolder">Maths</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Class 11</th>
+                <td>Gravitation+Heat transfer+NLM +WRE</td>
+                <td>P block</td>
+                <td>Alberbra</td>
+              </tr>
+              <tr>
+                <th scope="row">Class 12</th>
+                <td>Electrostatics+current electricity</td>
+                <td>P-Block,d anf f and metallurgy</td>
+                <td>Albera (Vector +3D)</td>
+              </tr>
+            </tbody>
+          </table></ul>
+    <ul>
+        <br><h2 class="text-dark">Block-5</h2><p class="text-primary">CImplete the below topics by february last month</p>
+        <table class="table h5 fw-bold">
+            <thead>
+              <tr>
+                <th scope="col fs-10 fw-bolder">#</th>
+                <th scope="col fs-10 fw-bolder">Physics</th>
+                <th scope="col fs-10 fw-bolder">Chemistry</th>
+                <th scope="col fs-10 fw-bolder">Maths</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Class 11</th>
+                <td>Gravitation+Heat transfer+NLM +WRE</td>
+                <td>P block</td>
+                <td>Alberbra</td>
+              </tr>
+              <tr>
+                <th scope="row">Class 12</th>
+                <td>Electrostatics+current electricity</td>
+                <td>P-Block,d anf f and metallurgy</td>
+                <td>Albera (Vector +3D)</td>
+              </tr>
+            </tbody>
+          </table>
+    </ul></div>
+<div class="images d-flex justify-content-center align-items-center p-3"><br><br>
+<img class="img-fluid rounded float-start shadow   " src="physics.png" alt="physics">
+<img class="img-fluid rounded float-start shadow "  src="test.jpg" alt="physics">
+</div>
+<br>
+<div class="links d-flex flex-column justify-content-center align-items-center  fw-bolder fs-55 h1">
+<p class="fw-bolder text-danger"><ul>
+    Below are some importnat link which would help you in preparation</p>
+  <li><a  class="fw-bolder fs-20 "href="https://byjus.com/jee/jee-main-question-paper/">Jee main Question paper</a></li>
+  <li><a  class=" fw-bolder fs-20 "href="https://byjus.com/jee/jee-advanced-previous-year-papers/">Jee Advance Question paper</a></li>
+  <li><a  class=" fw-bolder fs-20"href="https://byjus.com/jee/last-minute-preparation-tips-for-jee-main/">Preparation Tip</a></li>
+  <li><a  class=" fw-bolder fs-20"href="https://www.amazon.in/Authentic-SHORTCUTS-Chemistry-Mathematics-Advanced/dp/9390511763/ref=sr_1_3?adgrpid=1319415562843894&hvadid=82463731768619&hvbmt=be&hvdev=c&hvlocphy=156038&hvnetw=o&hvqmt=e&hvtargid=kwd-82464355030154%3Aloc-90&hydadcr=27133_1939435&keywords=books+for+jee+preparation&qid=1684275632&sr=8-3">Books for preparation</a></li>
+</ul>
+</div>
+</body>
+
+
+
+  
+<footer class="conatiner">
+    <div class="text-center p-4 d-flex align-items-center justify-content-center mb-0" id="footer">
+        © 2023 Copyright:www.MasterPlan.com
+        </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
